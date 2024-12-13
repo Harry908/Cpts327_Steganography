@@ -1,5 +1,4 @@
 import cv2
-import string
 import os
 
 #Create ASCII dictionary
@@ -32,9 +31,13 @@ def importImage():
     imagePath = getImagePath()
     while(not validatePath(imagePath)):
         imagePath=getImagePath()
-
     return cv2.imread(imagePath)
 
+def getMatrix(filePath):
+    return cv2.imread(filePath)
+
+def getMaxLength(imageMatrix):
+    return imageMatrix.shape[0] # number of row
 
 # Encrypt image
 def encrypt(imageMatrix, key, text):
@@ -54,8 +57,7 @@ def encrypt(imageMatrix, key, text):
         imageMatrix[n,m,z]=d[text[i]]^d[key[kl]]
         n=n+1
         m=m+1
-        m=(m+1)%3 #this is for every value of z , remainder will be between 0,1,2 . i.e G,R,B plane will be set automatically.
-                    #whatever be the value of z , z=(z+1)%3 will always between 0,1,2 . The same concept is used for random number in dice and card games.
+        m=(m+1)%3
         kl=(kl+1)%len(key)
 
     return imageMatrix
