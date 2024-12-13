@@ -13,6 +13,10 @@ This Python application enables image-based **steganography**, allowing users to
 ## Demo video
 Demo video link: https://drive.google.com/file/d/1OA_fzWThPzH3-REQGkIsapp3j-jN6d4S/view?usp=sharing
 
+## Algorithms
+Encrypt the message with a security key using XOR operation (Symmetric key encryption)
+Then hide the cipher into image's pixels 
+
 ## Requirements
 
 Before running the application, ensure that the following libraries are installed:
