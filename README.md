@@ -8,7 +8,7 @@ This Python application enables image-based **steganography**, allowing users to
 - Use a custom **security key** to encrypt and decrypt the message.
 - Open, select, and manipulate images in formats like `.png`, `.jpg`, `.jpeg`.
 - Show encrypted image with the hidden message using the decryption feature.
-- Save the encrypted image after the message is encoded.
+- Save the encrypted image as `.png` after the message is encoded.
 
 ## Requirements
 
@@ -17,7 +17,7 @@ Before running the application, ensure that the following libraries are installe
 - Python 3.x
 - `customtkinter`: For the graphical user interface (GUI)
 - `Pillow`: To manipulate images
-- `cv2`: For handling image processing tasks (used in saving the encrypted image)
+- `cv2`: For handling image processing tasks (used in getting image matrix for encrypt and decrypt)
 
 ### Install dependencies:
 
