@@ -10,6 +10,9 @@ This Python application enables image-based **steganography**, allowing users to
 - Show encrypted image with the hidden message using the decryption feature.
 - Save the encrypted image as `.png` after the message is encoded.
 
+## Demo video
+Demo video link: https://drive.google.com/file/d/1OA_fzWThPzH3-REQGkIsapp3j-jN6d4S/view?usp=sharing
+
 ## Requirements
 
 Before running the application, ensure that the following libraries are installed:
@@ -26,6 +29,8 @@ You can install the required libraries using **pip**:
 ```bash
 pip install customtkinter Pillow opencv-python
 ```
+
+
 
 ## How to Use
 
@@ -49,6 +54,7 @@ pip install customtkinter Pillow opencv-python
 4. **Save Encrypted Image:**
    - After encryption, the application will provide an option to save the image with the hidden message.
    - You can save the image in **.png** format.
+
 
 
 ## License
